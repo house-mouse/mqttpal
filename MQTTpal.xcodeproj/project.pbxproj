@@ -3,18 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		582ACDAC24BE8AA5008E357D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582ACDAB24BE8AA5008E357D /* AppDelegate.swift */; };
 		582ACDAE24BE8AA5008E357D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582ACDAD24BE8AA5008E357D /* SceneDelegate.swift */; };
-		582ACDB024BE8AA5008E357D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582ACDAF24BE8AA5008E357D /* ContentView.swift */; };
 		582ACDB224BE8AA9008E357D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 582ACDB124BE8AA9008E357D /* Assets.xcassets */; };
 		582ACDB524BE8AA9008E357D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 582ACDB424BE8AA9008E357D /* Preview Assets.xcassets */; };
 		582ACDB824BE8AA9008E357D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 582ACDB624BE8AA9008E357D /* LaunchScreen.storyboard */; };
 		582ACDC324BE8AA9008E357D /* MQTTpalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582ACDC224BE8AA9008E357D /* MQTTpalTests.swift */; };
 		582ACDCE24BE8AAA008E357D /* MQTTpalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582ACDCD24BE8AAA008E357D /* MQTTpalUITests.swift */; };
+		582ACDDC24BE8C95008E357D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582ACDDB24BE8C95008E357D /* ViewController.swift */; };
+		582ACDDF24BE8D6D008E357D /* SwiftMQTT in Frameworks */ = {isa = PBXBuildFile; productRef = 582ACDDE24BE8D6D008E357D /* SwiftMQTT */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,6 @@
 		582ACDA824BE8AA5008E357D /* MQTTpal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MQTTpal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		582ACDAB24BE8AA5008E357D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		582ACDAD24BE8AA5008E357D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		582ACDAF24BE8AA5008E357D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		582ACDB124BE8AA9008E357D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		582ACDB424BE8AA9008E357D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		582ACDB724BE8AA9008E357D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,7 @@
 		582ACDC924BE8AAA008E357D /* MQTTpalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MQTTpalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		582ACDCD24BE8AAA008E357D /* MQTTpalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTpalUITests.swift; sourceTree = "<group>"; };
 		582ACDCF24BE8AAA008E357D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		582ACDDB24BE8C95008E357D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				582ACDDF24BE8D6D008E357D /* SwiftMQTT in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +103,7 @@
 			children = (
 				582ACDAB24BE8AA5008E357D /* AppDelegate.swift */,
 				582ACDAD24BE8AA5008E357D /* SceneDelegate.swift */,
-				582ACDAF24BE8AA5008E357D /* ContentView.swift */,
+				582ACDDB24BE8C95008E357D /* ViewController.swift */,
 				582ACDB124BE8AA9008E357D /* Assets.xcassets */,
 				582ACDB624BE8AA9008E357D /* LaunchScreen.storyboard */,
 				582ACDB924BE8AA9008E357D /* Info.plist */,
@@ -152,6 +154,9 @@
 			dependencies = (
 			);
 			name = MQTTpal;
+			packageProductDependencies = (
+				582ACDDE24BE8D6D008E357D /* SwiftMQTT */,
+			);
 			productName = MQTTpal;
 			productReference = 582ACDA824BE8AA5008E357D /* MQTTpal.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +229,9 @@
 				Base,
 			);
 			mainGroup = 582ACD9F24BE8AA5008E357D;
+			packageReferences = (
+				582ACDDD24BE8D6D008E357D /* XCRemoteSwiftPackageReference "SwiftMQTT" */,
+			);
 			productRefGroup = 582ACDA924BE8AA5008E357D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -267,9 +275,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				582ACDDC24BE8C95008E357D /* ViewController.swift in Sources */,
 				582ACDAC24BE8AA5008E357D /* AppDelegate.swift in Sources */,
 				582ACDAE24BE8AA5008E357D /* SceneDelegate.swift in Sources */,
-				582ACDB024BE8AA5008E357D /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +447,7 @@
 				DEVELOPMENT_TEAM = 57769CNU4F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MQTTpal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +468,7 @@
 				DEVELOPMENT_TEAM = 57769CNU4F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MQTTpal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -594,6 +604,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		582ACDDD24BE8D6D008E357D /* XCRemoteSwiftPackageReference "SwiftMQTT" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aciidb0mb3r/SwiftMQTT";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		582ACDDE24BE8D6D008E357D /* SwiftMQTT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 582ACDDD24BE8D6D008E357D /* XCRemoteSwiftPackageReference "SwiftMQTT" */;
+			productName = SwiftMQTT;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 582ACDA024BE8AA5008E357D /* Project object */;
 }
