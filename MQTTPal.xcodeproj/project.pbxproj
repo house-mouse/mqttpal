@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		584A3D5F266251920000D526 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584A3D5E266251920000D526 /* AppDelegate.swift */; };
+		584A3D61266251920000D526 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584A3D60266251920000D526 /* SceneDelegate.swift */; };
+		584A3D63266251920000D526 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584A3D62266251920000D526 /* ViewController.swift */; };
+		584A3D66266251920000D526 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 584A3D64266251920000D526 /* Main.storyboard */; };
+		584A3D69266251920000D526 /* MQTTPal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 584A3D67266251920000D526 /* MQTTPal.xcdatamodeld */; };
+		584A3D6B266251960000D526 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 584A3D6A266251960000D526 /* Assets.xcassets */; };
+		584A3D6E266251960000D526 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 584A3D6C266251960000D526 /* LaunchScreen.storyboard */; };
+		584A3D79266251960000D526 /* MQTTPalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584A3D78266251960000D526 /* MQTTPalTests.swift */; };
+		584A3D84266251960000D526 /* MQTTPalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584A3D83266251960000D526 /* MQTTPalUITests.swift */; };
+		584A3D96266253350000D526 /* SwiftMQTT in Frameworks */ = {isa = PBXBuildFile; productRef = 584A3D95266253350000D526 /* SwiftMQTT */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		584A3D75266251960000D526 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 584A3D53266251920000D526 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 584A3D5A266251920000D526;
+			remoteInfo = MQTTPal;
+		};
+		584A3D80266251960000D526 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 584A3D53266251920000D526 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 584A3D5A266251920000D526;
+			remoteInfo = MQTTPal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		584A3D5B266251920000D526 /* MQTTPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MQTTPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		584A3D5E266251920000D526 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		584A3D60266251920000D526 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		584A3D62266251920000D526 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		584A3D65266251920000D526 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		584A3D68266251920000D526 /* MQTTPal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MQTTPal.xcdatamodel; sourceTree = "<group>"; };
+		584A3D6A266251960000D526 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		584A3D6D266251960000D526 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		584A3D6F266251960000D526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		584A3D74266251960000D526 /* MQTTPalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MQTTPalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		584A3D78266251960000D526 /* MQTTPalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTPalTests.swift; sourceTree = "<group>"; };
+		584A3D7A266251960000D526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		584A3D7F266251960000D526 /* MQTTPalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MQTTPalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		584A3D83266251960000D526 /* MQTTPalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTPalUITests.swift; sourceTree = "<group>"; };
+		584A3D85266251960000D526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		584A3D58266251920000D526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				584A3D96266253350000D526 /* SwiftMQTT in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		584A3D71266251960000D526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		584A3D7C266251960000D526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		584A3D52266251920000D526 = {
+			isa = PBXGroup;
+			children = (
+				584A3D5D266251920000D526 /* MQTTPal */,
+				584A3D77266251960000D526 /* MQTTPalTests */,
+				584A3D82266251960000D526 /* MQTTPalUITests */,
+				584A3D5C266251920000D526 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		584A3D5C266251920000D526 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				584A3D5B266251920000D526 /* MQTTPal.app */,
+				584A3D74266251960000D526 /* MQTTPalTests.xctest */,
+				584A3D7F266251960000D526 /* MQTTPalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		584A3D5D266251920000D526 /* MQTTPal */ = {
+			isa = PBXGroup;
+			children = (
+				584A3D5E266251920000D526 /* AppDelegate.swift */,
+				584A3D60266251920000D526 /* SceneDelegate.swift */,
+				584A3D62266251920000D526 /* ViewController.swift */,
+				584A3D64266251920000D526 /* Main.storyboard */,
+				584A3D6A266251960000D526 /* Assets.xcassets */,
+				584A3D6C266251960000D526 /* LaunchScreen.storyboard */,
+				584A3D6F266251960000D526 /* Info.plist */,
+				584A3D67266251920000D526 /* MQTTPal.xcdatamodeld */,
+			);
+			path = MQTTPal;
+			sourceTree = "<group>";
+		};
+		584A3D77266251960000D526 /* MQTTPalTests */ = {
+			isa = PBXGroup;
+			children = (
+				584A3D78266251960000D526 /* MQTTPalTests.swift */,
+				584A3D7A266251960000D526 /* Info.plist */,
+			);
+			path = MQTTPalTests;
+			sourceTree = "<group>";
+		};
+		584A3D82266251960000D526 /* MQTTPalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				584A3D83266251960000D526 /* MQTTPalUITests.swift */,
+				584A3D85266251960000D526 /* Info.plist */,
+			);
+			path = MQTTPalUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		584A3D5A266251920000D526 /* MQTTPal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 584A3D88266251960000D526 /* Build configuration list for PBXNativeTarget "MQTTPal" */;
+			buildPhases = (
+				584A3D57266251920000D526 /* Sources */,
+				584A3D58266251920000D526 /* Frameworks */,
+				584A3D59266251920000D526 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MQTTPal;
+			packageProductDependencies = (
+				584A3D95266253350000D526 /* SwiftMQTT */,
+			);
+			productName = MQTTPal;
+			productReference = 584A3D5B266251920000D526 /* MQTTPal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		584A3D73266251960000D526 /* MQTTPalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 584A3D8B266251960000D526 /* Build configuration list for PBXNativeTarget "MQTTPalTests" */;
+			buildPhases = (
+				584A3D70266251960000D526 /* Sources */,
+				584A3D71266251960000D526 /* Frameworks */,
+				584A3D72266251960000D526 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				584A3D76266251960000D526 /* PBXTargetDependency */,
+			);
+			name = MQTTPalTests;
+			productName = MQTTPalTests;
+			productReference = 584A3D74266251960000D526 /* MQTTPalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		584A3D7E266251960000D526 /* MQTTPalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 584A3D8E266251960000D526 /* Build configuration list for PBXNativeTarget "MQTTPalUITests" */;
+			buildPhases = (
+				584A3D7B266251960000D526 /* Sources */,
+				584A3D7C266251960000D526 /* Frameworks */,
+				584A3D7D266251960000D526 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				584A3D81266251960000D526 /* PBXTargetDependency */,
+			);
+			name = MQTTPalUITests;
+			productName = MQTTPalUITests;
+			productReference = 584A3D7F266251960000D526 /* MQTTPalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		584A3D53266251920000D526 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					584A3D5A266251920000D526 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					584A3D73266251960000D526 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 584A3D5A266251920000D526;
+					};
+					584A3D7E266251960000D526 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 584A3D5A266251920000D526;
+					};
+				};
+			};
+			buildConfigurationList = 584A3D56266251920000D526 /* Build configuration list for PBXProject "MQTTPal" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 584A3D52266251920000D526;
+			packageReferences = (
+				584A3D94266253350000D526 /* XCRemoteSwiftPackageReference "SwiftMQTT" */,
+			);
+			productRefGroup = 584A3D5C266251920000D526 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				584A3D5A266251920000D526 /* MQTTPal */,
+				584A3D73266251960000D526 /* MQTTPalTests */,
+				584A3D7E266251960000D526 /* MQTTPalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		584A3D59266251920000D526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				584A3D6E266251960000D526 /* LaunchScreen.storyboard in Resources */,
+				584A3D6B266251960000D526 /* Assets.xcassets in Resources */,
+				584A3D66266251920000D526 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		584A3D72266251960000D526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		584A3D7D266251960000D526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		584A3D57266251920000D526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				584A3D63266251920000D526 /* ViewController.swift in Sources */,
+				584A3D5F266251920000D526 /* AppDelegate.swift in Sources */,
+				584A3D61266251920000D526 /* SceneDelegate.swift in Sources */,
+				584A3D69266251920000D526 /* MQTTPal.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		584A3D70266251960000D526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				584A3D79266251960000D526 /* MQTTPalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		584A3D7B266251960000D526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				584A3D84266251960000D526 /* MQTTPalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		584A3D76266251960000D526 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 584A3D5A266251920000D526 /* MQTTPal */;
+			targetProxy = 584A3D75266251960000D526 /* PBXContainerItemProxy */;
+		};
+		584A3D81266251960000D526 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 584A3D5A266251920000D526 /* MQTTPal */;
+			targetProxy = 584A3D80266251960000D526 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		584A3D64266251920000D526 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				584A3D65266251920000D526 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		584A3D6C266251960000D526 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				584A3D6D266251960000D526 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		584A3D86266251960000D526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		584A3D87266251960000D526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		584A3D89266251960000D526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57769CNU4F;
+				INFOPLIST_FILE = MQTTPal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.starks.MQTTPal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		584A3D8A266251960000D526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57769CNU4F;
+				INFOPLIST_FILE = MQTTPal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.starks.MQTTPal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		584A3D8C266251960000D526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57769CNU4F;
+				INFOPLIST_FILE = MQTTPalTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.starks.MQTTPalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MQTTPal.app/MQTTPal";
+			};
+			name = Debug;
+		};
+		584A3D8D266251960000D526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57769CNU4F;
+				INFOPLIST_FILE = MQTTPalTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.starks.MQTTPalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MQTTPal.app/MQTTPal";
+			};
+			name = Release;
+		};
+		584A3D8F266251960000D526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57769CNU4F;
+				INFOPLIST_FILE = MQTTPalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.starks.MQTTPalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MQTTPal;
+			};
+			name = Debug;
+		};
+		584A3D90266251960000D526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57769CNU4F;
+				INFOPLIST_FILE = MQTTPalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.starks.MQTTPalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MQTTPal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		584A3D56266251920000D526 /* Build configuration list for PBXProject "MQTTPal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				584A3D86266251960000D526 /* Debug */,
+				584A3D87266251960000D526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		584A3D88266251960000D526 /* Build configuration list for PBXNativeTarget "MQTTPal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				584A3D89266251960000D526 /* Debug */,
+				584A3D8A266251960000D526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		584A3D8B266251960000D526 /* Build configuration list for PBXNativeTarget "MQTTPalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				584A3D8C266251960000D526 /* Debug */,
+				584A3D8D266251960000D526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		584A3D8E266251960000D526 /* Build configuration list for PBXNativeTarget "MQTTPalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				584A3D8F266251960000D526 /* Debug */,
+				584A3D90266251960000D526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		584A3D94266253350000D526 /* XCRemoteSwiftPackageReference "SwiftMQTT" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aciidb0mb3r/SwiftMQTT.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		584A3D95266253350000D526 /* SwiftMQTT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 584A3D94266253350000D526 /* XCRemoteSwiftPackageReference "SwiftMQTT" */;
+			productName = SwiftMQTT;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		584A3D67266251920000D526 /* MQTTPal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				584A3D68266251920000D526 /* MQTTPal.xcdatamodel */,
+			);
+			currentVersion = 584A3D68266251920000D526 /* MQTTPal.xcdatamodel */;
+			path = MQTTPal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 584A3D53266251920000D526 /* Project object */;
+}
